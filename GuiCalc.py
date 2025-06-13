@@ -7,7 +7,7 @@ class calculator:
         self.master.title("silva's scientific calculator")
         self.master.configure(background='white')
         self.master.resizable(width=False, height=False)
-        #self.master.geometry("480*568+450+90")
+        self.master.geometry("480*568+450+90")
 
         self.total = 0
         self.current = ''
@@ -41,9 +41,9 @@ class calculator:
         #scientific option button
             scientific =[
                 ('sin',self.sin),('cos',self.cos),('tan',self.tan),
-                #('log',self.log),('exp',self.exp),
-                #('pi',self.Pi),
-                #('e',self.e),
+                ('log',self.log),('exp',self.exp),
+                ('pi',self.Pi),
+                ('e',self.e),
                 ('sqrt',self.squared),
             ]
         for (text, func) in scientific: 
